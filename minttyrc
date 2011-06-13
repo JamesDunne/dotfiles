@@ -1,0 +1,14 @@
+BoldAsFont=no
+Transparency=medium
+OpaqueWhenFocused=yes
+CursorType=underscore
+Font=Anonymous Pro
+FontHeight=11
+Term=xterm-256color
+FontSmoothing=full
+Locale=C
+Charset=UTF-8
+Columns=113
+Rows=42
+BoldAsColour=yes
+Answerback=PuTTY

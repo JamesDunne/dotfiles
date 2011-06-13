@@ -1,0 +1,32 @@
+#Allow scrolling in xterm, 10000 lines
+termcapinfo xterm* ti@:te@
+termcapinfo putty ti@:te@
+defscrollback 10000
+
+term screen-256color
+shell /bin/bash
+
+hardstatus alwayslastline '%{= kg}[%{Y}%H%{g}][%{B}%l%{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{-}%{= kw}%?%+Lw%?%?%=%{g}][%{B}%Y-%m-%d %{W}%c%{g}]'
+
+sorendition "+b kG"
+
+# if activity is detected on an affected window switched into the background
+# you will receive the activity notification message in the status line
+# the window will also be marked with an .@. in the window-status display
+defmonitor on
+# When any activity occurs in a background window that is being monitored
+# screen displays a notification in the message line
+#activity "activity -> %n%f %t" # window number , flags of the window , window title
+
+activity "activity in %n (%t) [%w:%s]~"
+
+windowlist string "%{W}%3n %{+b r}%6f %011=%{y}%t"
+
+# don't leave vim stuff on screen
+altscreen on
+
+startup_message off
+
+#screen -t home 0
+#screen -t bash 1
+

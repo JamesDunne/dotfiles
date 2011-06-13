@@ -1,0 +1,24 @@
+[user]
+	name = James Dunne
+	email = james.jdunne@gmail.com
+[core]
+	editor = '/cygdrive/C/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession -noPlugin
+	autocrlf = false
+[difftool "diffmerge"]
+    cmd = '/cygdrive/C/TFS/cygwin/git-diffmerge-diff.sh' \"$LOCAL\" \"$REMOTE\"
+[mergetool "diffmerge"]
+    cmd = '/cygdrive/C/TFS/cygwin/git-diffmerge-merge.sh' \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+    trustExitCode = false
+    keepBackup = false
+[diff]
+	tool = external
+[merge]
+	tool = external
+[difftool "external"]
+	cmd = /usr/local/bin/git_external_difftool "$LOCAL" "$REMOTE"
+    keepBackup = false
+    trustExitCode = false
+[mergetool "external"]
+	cmd = /usr/local/bin/git_external_mergetool "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+    keepBackup = false
+    trustExitCode = false
