@@ -119,9 +119,11 @@ alias ls='ls -hF --color=auto'                 # classify files in colour
 alias ll='ls -l'                              # long list
 alias la='ls -A'                              # all but . and ..
 
+alias ga='git add'
 alias gs='git status'
-alias gd='git diff --staged'
-alias gc='git commit'
+alias gd='git diff'
+alias gds='git diff --staged'
+alias gc='git commit -m'    # followed by commit message
 alias gtc='git tfs ct --build-default-comment'
 alias gtf='git tfs fetch'
 alias gtm='git merge refs/remotes/tfs/default'
