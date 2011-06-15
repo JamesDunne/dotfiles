@@ -1,0 +1,8 @@
+#!/bin/sh
+
+LOCAL=$(cygpath -wla "$1")
+REMOTE=$(cygpath -wla "$2")
+BASE=$(cygpath -wla "$3")
+MERGED=$(cygpath -wla "$4")
+
+"/cygdrive/c/Program Files (x86)/KDiff3/kdiff3.exe" "$LOCAL" "$REMOTE" "$BASE" -o "$MERGED"

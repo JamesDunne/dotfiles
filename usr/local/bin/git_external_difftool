@@ -1,0 +1,6 @@
+#!/bin/sh
+
+BASE=$(cygpath -wla "$1")
+LOCAL=$(cygpath -wla "$2")
+
+"/cygdrive/c/Program Files (x86)/KDiff3/kdiff3.exe" "$BASE" "$LOCAL"
