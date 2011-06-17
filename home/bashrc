@@ -224,6 +224,6 @@ export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/100/Tools/Bi
 #### END JSD add-ons
 
 # Execute the hostrc file for this HOSTNAME:
-if [ -f "~/dotfiles/hosts/$HOSTNAME.hostrc" ]; then
-    . "~/dotfiles/hosts/$HOSTNAME.hostrc"
+if [ -f "$HOME/dotfiles/hosts/$HOSTNAME.hostrc" ]; then
+    . "$HOME/dotfiles/hosts/$HOSTNAME.hostrc"
 fi
