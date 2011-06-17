@@ -8,4 +8,6 @@ rm -f .minttyrc && ln -s ~/dotfiles/home/minttyrc .minttyrc
 rm -f .nanorc && ln -s ~/dotfiles/home/nanorc .nanorc
 rm -f .profile && ln -s ~/dotfiles/home/profile .profile
 rm -f .screenrc && ln -s ~/dotfiles/home/screenrc .screenrc
+# mkdir -p ~/.ssh
+# ln -s ~/dotfiles/home/ssh/* .ssh/
 popd

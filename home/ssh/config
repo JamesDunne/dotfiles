@@ -1,0 +1,6 @@
+Host bit
+HostName bittwiddlers.org
+Port 443
+
+Host *
+User jaymz
