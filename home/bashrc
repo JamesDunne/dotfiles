@@ -124,7 +124,7 @@ alias ga='git add'
 alias grm='git rm'
 alias gmv='git mv'
 
-alias gc='git branch'
+alias gb='git branch'
 alias gch='git checkout'
 
 alias gst='git status'
