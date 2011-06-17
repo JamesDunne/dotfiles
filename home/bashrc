@@ -119,13 +119,22 @@ alias ls='ls -hF --color=auto'                 # classify files in colour
 alias ll='ls -l'                              # long list
 alias la='ls -A'                              # all but . and ..
 
+# git aliases
 alias ga='git add'
+alias grm='git rm'
+alias gmv='git mv'
+
+alias gc='git branch'
+alias gch='git checkout'
+
 alias gst='git status'
 alias gsh='git show'
-alias gl='git log'
 alias gd='git diff'
 alias gds='git diff --staged'
+alias gl='git log'
+
 alias gc='git commit -m'    # followed by commit message
+
 alias gtc='git tfs ct --build-default-comment'
 alias gtf='git tfs fetch'
 alias gtm='git merge refs/remotes/tfs/default'
@@ -212,6 +221,9 @@ export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/100/Tools/Bi
 export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/100/DTS/Binn/
 export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/100/Tools/Binn/VSShell/Common7/IDE/
 
-cd /cygdrive/c/TFS/git/K/KVU/KUC-Development/Solution/
-
 #### END JSD add-ons
+
+# Execute the hostrc file for this HOSTNAME:
+if [ -f "~/dotfiles/hosts/$HOSTNAME/hostrc" ]; then
+    . "~/dotfiles/hosts/$HOSTNAME/hostrc"
+fi
