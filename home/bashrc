@@ -126,6 +126,10 @@ alias gmv='git mv'
 
 alias gb='git branch'
 alias gch='git checkout'
+alias gmg='git merge'
+
+alias gpl='git pull'
+alias gps='git push'
 
 alias gst='git status'
 alias gsh='git show'
@@ -137,7 +141,7 @@ alias gc='git commit -m'    # followed by commit message
 
 alias gtc='git tfs ct --build-default-comment'
 alias gtf='git tfs fetch'
-alias gtm='git merge refs/remotes/tfs/default'
+alias gtm='git merge tfs/default'
 
 
 # Functions

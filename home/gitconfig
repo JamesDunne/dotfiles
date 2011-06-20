@@ -4,6 +4,11 @@
 [core]
 	editor = '/cygdrive/C/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession -noPlugin
 	autocrlf = false
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = true
 [diff]
 	tool = external
 [merge]
