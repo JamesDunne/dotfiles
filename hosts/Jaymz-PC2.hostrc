@@ -1,2 +1,25 @@
 #!/bin/bash
+
+export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ Visual\ Studio\ 9.0/Common7/Tools/
+export PATH=$PATH:/cygdrive/c/Program\ Files/7-Zip/
+export PATH=$PATH:/cygdrive/c/Program\ Files/GitExtensions/
+
+export PATH=$PATH:/cygdrive/c/WINDOWS/Microsoft.NET/Framework/v3.5:/c/WINDOWS/Microsoft.NET/Framework/v2.0.50727
+export PATH=$PATH:/cygdrive/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem
+export PATH=$PATH:/cygdrive/c/WINDOWS/system32/WindowsPowerShell/v1.0
+export PATH=$PATH:/cygdrive/c/Program\ Files/Bitvise\ Tunnelier
+export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ Visual\ Studio\ 9.0/Common7/IDE
+export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ Visual\ Studio\ 9.0/VC/BIN
+export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ Visual\ Studio\ 9.0/Common7/Tools
+export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ Visual\ Studio\ 9.0/VC/VCPackages
+export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ Visual\ Studio\ 9.0/Team\ Tools/Performance\ Tools/
+export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SDKs/Windows/v6.0A/bin
+export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/80/Tools/Binn/
+export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/90/Tools/binn/
+export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/90/DTS/Binn/
+export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/90/Tools/Binn/VSShell/Common7/IDE/
+export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/100/Tools/Binn/
+export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/100/DTS/Binn/
+export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/100/Tools/Binn/VSShell/Common7/IDE/
+
 cd /cygdrive/d/Work/git/feather
