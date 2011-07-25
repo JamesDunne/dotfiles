@@ -4,6 +4,7 @@
 [core]
 	editor = '/cygdrive/C/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession -noPlugin
 	autocrlf = false
+	filemode = false
 [color]
     diff = auto
     status = auto
@@ -21,3 +22,5 @@
 	cmd = /usr/local/bin/git_external_mergetool "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
     keepBackup = false
     trustExitCode = false
+[diff "stat"]
+	width = 124

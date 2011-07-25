@@ -27,4 +27,5 @@ export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/100/Tools/Bi
 export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/100/DTS/Binn/
 export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/100/Tools/Binn/VSShell/Common7/IDE/
 
-cd /cygdrive/c/TFS/git/K/KVU/KUC-Development/Solution
+#cd /cygdrive/c/TFS/git/K/KVU/KHEC-Development/Solution
+cd /cygdrive/c/TFS/git/K/SF/KHEC/Development/Solution
