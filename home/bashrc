@@ -139,6 +139,7 @@ alias gst='git status'
 
 alias gsh='git show --ignore-space-at-eol --ignore-space-change -b -w'
 alias gd='git diff --ignore-space-at-eol --ignore-space-change -b -w'
+alias gdt='git difftool'
 alias gds='gd --staged'
 
 alias gl='git log'
