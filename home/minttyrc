@@ -1,5 +1,5 @@
 BoldAsFont=no
-Transparency=medium
+Transparency=glass
 OpaqueWhenFocused=yes
 CursorType=underscore
 Font=Anonymous Pro
@@ -8,7 +8,7 @@ Term=xterm-256color
 FontSmoothing=full
 Locale=C
 Charset=UTF-8
-Columns=113
+Columns=160
 Rows=42
 BoldAsColour=yes
 Answerback=PuTTY

@@ -9,8 +9,10 @@ export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ Visual\ Studio\ 9.0/Comm
 export PATH=$PATH:/cygdrive/c/Program\ Files/7-Zip/
 export PATH=$PATH:/cygdrive/c/Program\ Files/GitExtensions/
 
-export PATH=$PATH:/cygdrive/c/WINDOWS/Microsoft.NET/Framework/v3.5:/c/WINDOWS/Microsoft.NET/Framework/v2.0.50727
-export PATH=$PATH:/cygdrive/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem
+export PATH=$PATH:/cygdrive/c/WINDOWS/Microsoft.NET/Framework/v4.0.30319
+export PATH=$PATH:/cygdrive/c/WINDOWS/Microsoft.NET/Framework/v3.5
+export PATH=$PATH:/cygdrive/c/WINDOWS/Microsoft.NET/Framework/v2.0.50727
+export PATH=$PATH:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem
 export PATH=$PATH:/cygdrive/c/WINDOWS/system32/WindowsPowerShell/v1.0
 export PATH=$PATH:/cygdrive/c/Program\ Files/Bitvise\ Tunnelier
 export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ Visual\ Studio\ 9.0/Common7/IDE
@@ -27,4 +29,5 @@ export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/100/Tools/Bi
 export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/100/DTS/Binn/
 export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/100/Tools/Binn/VSShell/Common7/IDE/
 
-cd /cygdrive/c/TFS/git/K/KVU/KUC-Development/Solution
+#cd /cygdrive/c/TFS/git/K/KVU/KHEC-Development/Solution
+cd /cygdrive/c/TFS/git/K/SF/KHEC/Development/Solution

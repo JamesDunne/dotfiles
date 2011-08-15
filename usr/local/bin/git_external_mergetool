@@ -1,8 +1,11 @@
 #!/bin/sh
 
-LOCAL=$(cygpath -wla "$1")
-REMOTE=$(cygpath -wla "$2")
-BASE=$(cygpath -wla "$3")
-MERGED=$(cygpath -wla "$4")
+# Passing the following parameters to mergetool:
+#  local base remote merge_result
 
-"/cygdrive/c/Program Files (x86)/KDiff3/kdiff3.exe" "$LOCAL" "$REMOTE" "$BASE" -o "$MERGED"
+#alocal=$1
+#base=$2
+#remote=$3
+#result=$4
+
+'/cygdrive/c/Program Files (x86)/KDiff3/kdiff3.exe' -m "$(cygpath -wla "$2")" "$(cygpath -wla "$1")" "$(cygpath -wla "$3")" -o "$(cygpath -wla "$4")"
