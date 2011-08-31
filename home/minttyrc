@@ -1,6 +1,6 @@
 BoldAsFont=no
-Transparency=glass
-OpaqueWhenFocused=yes
+Transparency=medium
+OpaqueWhenFocused=no
 CursorType=underscore
 Font=Anonymous Pro
 FontHeight=10
