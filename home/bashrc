@@ -143,6 +143,7 @@ alias gdt='git difftool'
 alias gds='gd --staged'
 
 alias gl='git log'
+alias glol='git log --graph --decorate --pretty=oneline --abbrev-commit'
 
 alias gc='git commit -m'    # followed by commit message
 
