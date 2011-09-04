@@ -22,4 +22,4 @@ export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/100/Tools/Bi
 export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/100/DTS/Binn/
 export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ SQL\ Server/100/Tools/Binn/VSShell/Common7/IDE/
 
-cd /cygdrive/d/Work/git/ivo/
+cd /cygdrive/d/Work/git/ivo-cms/
