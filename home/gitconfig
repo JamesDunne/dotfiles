@@ -1,26 +1,26 @@
 [user]
-	name = James Dunne
-	email = james.jdunne@gmail.com
+    name = James Dunne
+    email = james.jdunne@gmail.com
 [core]
-	editor = '/cygdrive/C/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession -noPlugin
-	autocrlf = false
-	filemode = false
+    editor = '/cygdrive/C/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession -noPlugin
+    autocrlf = false
+    filemode = false
 [color]
-    diff = auto
-    status = auto
-    branch = auto
+    diff = always
+    status = always
+    branch = always
     interactive = true
 [diff]
-	tool = external
+    tool = external
 [merge]
-	tool = external
+    tool = external
 [difftool "external"]
-	cmd = /usr/local/bin/git_external_difftool \"$LOCAL\" \"$REMOTE\"
+    cmd = /usr/local/bin/git_external_difftool \"$LOCAL\" \"$REMOTE\"
     keepBackup = false
     trustExitCode = false
 [mergetool "external"]
-	cmd = /usr/local/bin/git_external_mergetool \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+    cmd = /usr/local/bin/git_external_mergetool \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
     keepBackup = false
     trustExitCode = false
 [diff "stat"]
-	width = 124
+    width = 124
