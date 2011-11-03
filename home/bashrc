@@ -131,6 +131,7 @@ alias gmv='git mv'
 alias gb='git branch'
 alias gch='git checkout'
 alias gmg='git merge'
+alias grb='git rebase'
 
 alias gpl='git pull'
 alias gps='git push'

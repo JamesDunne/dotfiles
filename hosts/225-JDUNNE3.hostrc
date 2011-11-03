@@ -3,6 +3,7 @@
 alias gtc='git tfs ct --build-default-comment'
 alias gtf='git tfs fetch'
 alias gtm='git merge tfs/default'
+alias gtrb='git rebase tfs/default'
 
 export PATH=$PATH:/cygdrive/c/TFS/TFC/
 export PATH=$PATH:/cygdrive/c/Program\ Files/Microsoft\ Visual\ Studio\ 9.0/Common7/Tools/
