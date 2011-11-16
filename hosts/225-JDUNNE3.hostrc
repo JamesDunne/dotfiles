@@ -43,5 +43,5 @@ then
     cd $CYGPREFIX/c/TFS/git/J/ivo-cms/;
 else
     echo Work hours - work on Portalz
-    cd $CYGPREFIX/c/TFS/git/K/SF/KHEC/Development-RC0003/Solution;
+    cd $CYGPREFIX/c/TFS/git/K/SF/KHEC/Development-RC0004/Solution;
 fi
