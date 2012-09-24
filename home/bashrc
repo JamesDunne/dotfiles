@@ -136,7 +136,7 @@ alias grb='git rebase'
 alias gpl='git pull'
 alias gps='git push'
 
-alias gst='git status'
+alias gst='git status -sb'
 
 alias gsh='git show --ignore-space-at-eol --ignore-space-change -b -w'
 alias gd='git diff --ignore-space-at-eol --ignore-space-change -b -w'
