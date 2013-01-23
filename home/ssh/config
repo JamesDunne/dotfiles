@@ -2,5 +2,24 @@ Host bit
 HostName bittwiddlers.org
 Port 443
 
+Host r2
+HostName kucy2d08r2poc
+Port 22
+User jdunne
+
+Host pi
+HostName 192.168.1.14
+Port 443
+User pi
+
+Host home
+HostName jamesdunne.dyndns-home.com
+Port 443
+User pi
+
+Host gh
+HostName github.com
+User git
+
 Host *
 User jaymz
