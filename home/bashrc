@@ -150,6 +150,8 @@ alias glol='git log --graph --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue
 alias gc='git commit -m'    # followed by commit message
 alias gca='git commit --amend -C HEAD'
 
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 # Functions
 # #########
