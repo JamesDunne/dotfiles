@@ -17,6 +17,10 @@ mv -n .profile .backup/
 ln -s ~/dotfiles/home/profile .profile
 mv -n .screenrc .backup/
 ln -s ~/dotfiles/home/screenrc .screenrc
+mv -n .vimrc .backup/
+ln -s ~/dotfiles/home/vimrc .vimrc
+mv -n .tmux.conf .backup/
+ln -s ~/dotfiles/home/tmux.conf .tmux.conf
 
 mkdir -p .ssh
 mkdir -p .backup/ssh
