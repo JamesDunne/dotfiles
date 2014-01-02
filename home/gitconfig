@@ -11,15 +11,11 @@
     branch = always
     interactive = true
 [diff]
-    tool = external
+    tool = kdiff3
 [merge]
-    tool = external
-[difftool "external"]
-    cmd = /usr/local/bin/git_external_difftool \"$LOCAL\" \"$REMOTE\"
-    keepBackup = false
-    trustExitCode = false
-[mergetool "external"]
-    cmd = /usr/local/bin/git_external_mergetool \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+    tool = kdiff3
+[mergetool "kdiff3"]
+    path = /home/Jim/kdiff3.sh
     keepBackup = false
     trustExitCode = false
 [diff "stat"]
