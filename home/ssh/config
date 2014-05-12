@@ -17,6 +17,11 @@ HostName jamesdunne.dyndns-home.com
 Port 443
 User pi
 
+Host gh-kaplan
+HostName github.com
+User git
+IdentityFile ~/.ssh/jdunne-kaplan_rsa
+
 Host gh
 HostName github.com
 User git
@@ -24,3 +29,4 @@ User git
 Host *
 User jaymz
 ServerAliveInterval 60
+IdentityFile ~/.ssh/id_dsa
