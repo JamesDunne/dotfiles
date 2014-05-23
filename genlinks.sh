@@ -1,29 +1,30 @@
 #!/bin/bash
+DF=~/.dotfiles
 pushd ~
 mkdir -p .backup
 mv -n .bashrc .backup/
-ln -s ~/dotfiles/home/bashrc .bashrc
+ln -s $DF/home/bashrc .bashrc
 mv -n .gitconfig .backup/
-ln -s ~/dotfiles/home/gitconfig .gitconfig
+ln -s $DF/home/gitconfig .gitconfig
 mv -n .gitk .backup/
-ln -s ~/dotfiles/home/gitk .gitk
+ln -s $DF/home/gitk .gitk
 mv -n .inputrc .backup/
-ln -s ~/dotfiles/home/inputrc .inputrc
+ln -s $DF/home/inputrc .inputrc
 mv -n .minttyrc .backup/
-ln -s ~/dotfiles/home/minttyrc .minttyrc
+ln -s $DF/home/minttyrc .minttyrc
 mv -n .nanorc .backup/
-ln -s ~/dotfiles/home/nanorc .nanorc
+ln -s $DF/home/nanorc .nanorc
 mv -n .profile .backup/
-ln -s ~/dotfiles/home/profile .profile
+ln -s $DF/home/profile .profile
 mv -n .screenrc .backup/
-ln -s ~/dotfiles/home/screenrc .screenrc
+ln -s $DF/home/screenrc .screenrc
 mv -n .vimrc .backup/
-ln -s ~/dotfiles/home/vimrc .vimrc
+ln -s $DF/home/vimrc .vimrc
 mv -n .tmux.conf .backup/
-ln -s ~/dotfiles/home/tmux.conf .tmux.conf
+ln -s $DF/home/tmux.conf .tmux.conf
 
 mkdir -p .ssh
 mkdir -p .backup/ssh
 mv -n .ssh/config .ssh/known_hosts .backup/ssh/
-ln -s ~/dotfiles/home/ssh/* .ssh/
+ln -s $DF/home/ssh/* .ssh/
 popd
