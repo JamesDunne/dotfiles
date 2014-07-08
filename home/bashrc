@@ -149,7 +149,7 @@ alias gds='gd --staged'
 
 alias gl='git log'
 #alias glol='git log --graph --decorate --pretty=oneline --abbrev-commit'
-alias glol='git log --graph --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]" --decorate'
+alias glol='git log --graph --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%an]" --decorate'
 
 alias gc='git commit -m'    # followed by commit message
 alias gca='git commit --amend -C HEAD'
@@ -193,24 +193,24 @@ function test_identities {
 }
 
 # check for running ssh-agent with proper $SSH_AGENT_PID
-if [ -n "$SSH_AGENT_PID" ]; then
-    ps -ef | grep "$SSH_AGENT_PID" | grep ssh-agent > /dev/null
-    if [ $? -eq 0 ]; then
-	test_identities
-    fi
-# if $SSH_AGENT_PID is not properly set, we might be able to load one from
-# $SSH_ENV
-else
-    if [ -f "$SSH_ENV" ]; then
-	. "$SSH_ENV" > /dev/null
-    fi
-    ps -ef | grep "$SSH_AGENT_PID" | grep ssh-agent > /dev/null
-    if [ $? -eq 0 ]; then
-        test_identities
-    else
-        start_agent
-    fi
-fi
+#if [ -n "$SSH_AGENT_PID" ]; then
+#    ps -ef | grep "$SSH_AGENT_PID" | grep ssh-agent > /dev/null
+#    if [ $? -eq 0 ]; then
+#        test_identities
+#    fi
+## if $SSH_AGENT_PID is not properly set, we might be able to load one from
+## $SSH_ENV
+#else
+#    if [ -f "$SSH_ENV" ]; then
+#        . "$SSH_ENV" > /dev/null
+#    fi
+#    ps -ef | grep "$SSH_AGENT_PID" | grep ssh-agent > /dev/null
+#    if [ $? -eq 0 ]; then
+#        test_identities
+#    else
+#        start_agent
+#    fi
+#fi
 
 ## END msysGit ssh-agent setup
 

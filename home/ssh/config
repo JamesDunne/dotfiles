@@ -2,6 +2,12 @@ Host bit
 HostName bittwiddlers.org
 Port 443
 
+Host band
+HostName bittwiddlers.org
+Port 443
+User band
+IdentityFile ~/.ssh/band_id_rsa
+
 Host r2
 HostName kucy2d08r2poc
 Port 22
