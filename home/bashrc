@@ -215,6 +215,6 @@ function test_identities {
 ## END msysGit ssh-agent setup
 
 # Execute the hostrc file for this HOSTNAME:
-if [ -f "$HOME/dotfiles/hosts/$HOSTNAME.hostrc" ]; then
-    . "$HOME/dotfiles/hosts/$HOSTNAME.hostrc"
+if [ -f "$HOME/.dotfiles/hosts/$HOSTNAME.hostrc" ]; then
+    . "$HOME/.dotfiles/hosts/$HOSTNAME.hostrc"
 fi
