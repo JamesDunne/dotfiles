@@ -20,3 +20,7 @@
     trustExitCode = false
 [diff "stat"]
     width = 124
+[branch]
+	autosetuprebase = always
+[push]
+	default = simple
