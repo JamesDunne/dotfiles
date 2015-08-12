@@ -1,44 +1,13 @@
 Host bit
-HostName bittwiddlers.org
-Port 22
-
-Host band
-HostName bittwiddlers.org
-Port 22
-User band
-IdentityFile ~/.ssh/band_id_rsa
-
-Host oneinten
-HostName oneintenband.com
-Port 22
-User band
-IdentityFile ~/.ssh/oneintenband_id_rsa
-
-Host r2
-HostName kucy2d08r2poc
-Port 22
-User jdunne
-
-Host pi
-HostName 192.168.1.14
+HostName 64.85.164.128
 Port 443
-User pi
-
-Host home
-HostName jamesdunne.dyndns-home.com
-Port 443
-User pi
-
-Host gh-kaplan
-HostName github.com
-User git
-IdentityFile ~/.ssh/jdunne-kaplan_rsa
+User jaymz
 
 Host gh
 HostName github.com
 User git
 
-Host *
-User jaymz
-ServerAliveInterval 60
-IdentityFile ~/.ssh/id_dsa
+Host oneinten
+HostName oneintenband.com
+User band
+IdentityFile ~/.ssh/oneintenband_id_rsa
