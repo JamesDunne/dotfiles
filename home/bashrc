@@ -148,8 +148,8 @@ alias gdt='git difftool'
 alias gds='gd --staged'
 
 alias gl='git log'
-#alias glol='git log --graph --decorate --pretty=oneline --abbrev-commit'
-alias glol='git log --graph --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%an]" --decorate'
+#alias glol='git log --graph --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%an]" --decorate'
+alias glol='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%an]" --decorate'
 
 alias gc='git commit -m'    # followed by commit message
 alias gca='git commit --amend -C HEAD'
