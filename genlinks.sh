@@ -20,6 +20,7 @@ mv -n .screenrc .backup/
 ln -s $DF/home/screenrc .screenrc
 mv -n .vimrc .backup/
 ln -s $DF/home/vimrc .vimrc
+ln -sf $DF/home/vim .vim
 mv -n .tmux.conf .backup/
 ln -s $DF/home/tmux.conf .tmux.conf
 
