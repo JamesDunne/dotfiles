@@ -2,7 +2,7 @@ Host bit
 HostName bittwiddlers.org
 User jaymz
 #PubkeyAcceptedKeyTypes +ssh-dss*
-IdentityFile ~/.ssh/id_dsa
+#IdentityFile ~/.ssh/id_dsa
 
 Host gh
 HostName github.com
@@ -16,6 +16,6 @@ User band
 IdentityFile ~/.ssh/oneintenband_id_rsa
 
 Host *
-User VPC\jim.dunne
+#User VPC\jim.dunne
 ServerAliveInterval 60
-IdentityFile ~/.ssh/vpc-jimdunne
+#IdentityFile ~/.ssh/vpc-jimdunne
