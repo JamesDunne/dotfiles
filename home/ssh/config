@@ -1,21 +1,149 @@
-Host bit
-HostName bittwiddlers.org
-User jaymz
-#PubkeyAcceptedKeyTypes +ssh-dss*
-IdentityFile ~/.ssh/id_dsa
+Host home
+  HostName jamesdunne.is-a-rockstar.com
+  User root
+  IdentityFile ~/.ssh/id_rsa
 
-Host gh
+Host pi3
+  HostName 192.168.0.108
+  User pi
+
+Host pi1-lan
+  HostName 192.168.0.161
+  User jaymz
+
+Host pi1-wifi
+  HostName 192.168.0.162
+  User jaymz
+
+Host home-pi
+  HostName jamesdunne.is-a-rockstar.com
+  Port 9022
+  User pi
+
+Host bit
+  HostName bittwiddlers.org
+  User jaymz
+  ControlPath ~/.ssh/cm-%r@%h:%p
+  ControlMaster auto
+  ControlPersist 10m
+
+Host band
+  HostName bittwiddlers.org
+  User band
+  IdentityFile ~/.ssh/band_id_rsa
+
 HostName github.com
-User git
-#PubkeyAcceptedKeyTypes +ssh-dss*
-IdentityFile ~/.ssh/id_dsa
+  User git
+  #PubkeyAcceptedKeyTypes +ssh-dss*
+  IdentityFile ~/.ssh/id_rsa
 
 Host oneinten
-HostName oneintenband.com
-User band
-IdentityFile ~/.ssh/oneintenband_id_rsa
+  HostName oneintenband.com
+  User band
+  IdentityFile ~/.ssh/oneintenband_id_rsa
+
+Host *.cloud.vivaki.com
+  User VPC\jim.dunne
+  ServerAliveInterval 60
+  IdentityFile ~/.ssh/vpc-jimdunne
+
+Host vivaki-dockerswarm
+  HostName 172.18.34.183
+  User VPC\jim.dunne
+  IdentityFile ~/.ssh/vpc-jimdunne
+
+# Production VOS servers:
+# Host vivappws01.cloud.vivaki.com
+#   /etc/tomcat8-vos/
+#   /etc/tomcat8-*/
+# Host vivappws02.cloud.vivaki.com
+#   /webapps/vos-optimization-engine = my-campaigns
+
+#######################################################
 
 Host *
-User VPC\jim.dunne
-ServerAliveInterval 60
-IdentityFile ~/.ssh/vpc-jimdunne
+  UseKeychain yes
+  AddKeysToAgent yes
+
+Host bastion
+  HostName 52.44.38.55
+  User bastion
+  IdentityFile ~/.ssh/BastionUser.pem
+  IdentityFile ~/.ssh/id_rsa
+
+Host alpha-mongo
+  HostName 10.0.0.32
+  ProxyCommand ssh bastion -W %h:%p
+  User jimdunne
+  IdentityFile ~/.ssh/BastionUser.pem
+  IdentityFile ~/.ssh/id_rsa
+
+Host beta-mongo
+  HostName 10.0.11.18
+  ProxyCommand ssh bastion -W %h:%p
+  User jimdunne
+  IdentityFile ~/.ssh/BastionUser.pem
+  IdentityFile ~/.ssh/id_rsa
+
+#######################################################
+
+Host prod-emr
+  HostName 10.0.29.106
+  ProxyCommand ssh bastion -W %h:%p
+  User ec2-user
+  IdentityFile ~/.ssh/BastionUser.pem
+  IdentityFile ~/.ssh/EMRAccess.pem
+
+Host prod-mongo
+  HostName prod-mongo1.internal.core.publicismedia.com
+  ProxyCommand ssh bastion -W %h:%p
+  User jimdunne
+  IdentityFile ~/.ssh/BastionUser.pem
+  IdentityFile ~/.ssh/id_rsa
+
+Host prod-tef
+   HostName 10.0.26.85
+   ProxyCommand ssh bastion -W %h:%p
+   User jimdunne
+   LocalForward 0.0.0.0:8081 10.0.26.85:8081
+
+#######################################################
+
+Host integration-run
+  User ubuntu
+  HostName sandbox.rundsp.com
+
+Host staging-ppc-portal-api
+  User ubuntu
+  HostName 54.196.26.241
+
+Host staging-run
+  User ubuntu
+  HostName staging.rundsp.com
+
+Host demo-ppc-portal-api
+  User ubuntu
+  IdentityFile ~/.ssh/id_rsa
+  HostName demo.rundsp.com
+
+Host prod-ppc-portal-api-1
+  User ubuntu
+  IdentityFile ~/.ssh/JW-key.pem.cer
+  HostName 54.157.51.171
+
+Host prod-ppc-portal-api-2
+  User ubuntu
+  IdentityFile ~/.ssh/JW-key.pem.cer
+  HostName 54.242.5.205
+
+Host prod-run
+  User ubuntu
+  HostName portal.rundsp.com
+
+Host prod-run1
+  User ubuntu
+  HostName prod-app1.rundsp.com
+
+Host prod-run2
+  User ubuntu
+  HostName prod-app2.rundsp.com

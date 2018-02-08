@@ -2,7 +2,7 @@
     name = James Dunne
     email = james.jdunne@gmail.com
 [core]
-	editor = nano
+	editor = subl -n -w
     autocrlf = false
     filemode = false
 [color]
@@ -12,15 +12,27 @@
     interactive = true
 [diff]
     tool = kdiff3
+[difftool "kdiff3"]
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+    keepBackup = false
+    trustExitCode = false
+[diff "syx"]
+    textconv = hexdump -v -C
 [merge]
     tool = kdiff3
 [mergetool "kdiff3"]
-    path = /home/Jim/kdiff3.sh
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
     keepBackup = false
     trustExitCode = false
 [diff "stat"]
     width = 124
 [branch]
-	autosetuprebase = always
 [push]
 	default = simple
+[rerere]
+	enabled = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
