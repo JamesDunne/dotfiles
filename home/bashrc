@@ -226,15 +226,3 @@ function test_identities {
 if [ -f "$HOME/.dotfiles/hosts/$HOSTNAME.hostrc" ]; then
     . "$HOME/.dotfiles/hosts/$HOSTNAME.hostrc"
 fi
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-export PATH="$PATH:/Applications/microchip/xc8/v2.05/bin"
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/jamesd/.sdkman"
-[[ -s "/Users/jamesd/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/jamesd/.sdkman/bin/sdkman-init.sh"

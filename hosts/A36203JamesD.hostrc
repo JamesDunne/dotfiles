@@ -21,3 +21,14 @@ export KRB5_CONFIG=$HOME/.kfk/cu-connector-dev/kafka-krb5.conf
 # for tests
 #export DOCKER_HOST_BASE=dockerbox
 export DOCKER_HOST_BASE=vault
+
+# nvm:
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/jamesd/.sdkman"
+[[ -s "/Users/jamesd/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/jamesd/.sdkman/bin/sdkman-init.sh"
