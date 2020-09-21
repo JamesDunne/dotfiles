@@ -39,3 +39,16 @@ fi
 #   INFOPATH=${HOME}/info:${INFOPATH}
 # fi
 
+
+##
+# Your previous /Users/jamesd/.profile file was backed up as /Users/jamesd/.profile.macports-saved_2019-02-02_at_20:18:55
+##
+
+# MacPorts Installer addition on 2019-02-02_at_20:18:55: adding an appropriate PATH variable for use with MacPorts.
+#export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+
+export PATH="$PATH:/Applications/microchip/xc8/v2.05/bin"
+
+export PATH="$HOME/.cargo/bin:$PATH"

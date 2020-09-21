@@ -149,14 +149,22 @@ alias gds='gd --staged'
 
 alias gl='git log'
 #alias glol='git log --graph --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%an]" --decorate'
-alias glol='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%an]" --decorate'
+#alias glol='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%an]" --decorate'
+alias glol='git log --pretty=format:"%C(yellow)%h %Cgreen%as%Cred%d %Creset%s%Cblue [%an]" --decorate'
 
-alias gc='git commit -m'    # followed by commit message
+alias gc='git commit -m'                   # followed by commit message
+alias gce='git commit --allow-empty -m'    # followed by commit message
 alias gca='git commit --amend -C HEAD'
 
 
 # 256 color support for tmux
 alias tmux='tmux -2'
+
+alias dk=docker
+alias dc=docker-compose
+
+# Force faster sftp connections:
+alias sftp-fast="sftp -R 128 -B 65536"
 
 # Functions
 # #########
@@ -218,3 +226,15 @@ function test_identities {
 if [ -f "$HOME/.dotfiles/hosts/$HOSTNAME.hostrc" ]; then
     . "$HOME/.dotfiles/hosts/$HOSTNAME.hostrc"
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+export PATH="$PATH:/Applications/microchip/xc8/v2.05/bin"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/jamesd/.sdkman"
+[[ -s "/Users/jamesd/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/jamesd/.sdkman/bin/sdkman-init.sh"

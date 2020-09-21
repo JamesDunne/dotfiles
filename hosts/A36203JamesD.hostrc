@@ -1,0 +1,23 @@
+# Personal
+#export GO111MODULE=on
+export GOPATH=~/go
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export PATH=$PATH:$GOPATH/bin
+
+export PATH="/usr/local/opt/mongodb@3.4/bin:$PATH"
+
+# OPP-DS
+#export WORKSPACE=~/Developer/us/opp/ds
+#export TEAM=OPPDS
+#source $WORKSPACE/dev-tools/scripts/profile.sh
+
+export MAVEN_OPTS="-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
+
+# kafkacat and kafka cli tools:
+#export KAFKA_OPTS="-Djava.security.auth.login.config=/Users/jamesd/.kfk/oppds-mia-secure/client_jaas.conf -Djava.security.krb5.conf=/etc/krb5.conf"
+export KAFKACAT_CONFIG=$HOME/.kfk/cu-connector-dev/kafkacat.conf
+export KRB5_CONFIG=$HOME/.kfk/cu-connector-dev/kafka-krb5.conf
+
+# for tests
+#export DOCKER_HOST_BASE=dockerbox
+export DOCKER_HOST_BASE=vault

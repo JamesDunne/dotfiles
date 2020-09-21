@@ -1,5 +1,6 @@
 Host bit
 HostName bittwiddlers.org
+Port 9022
 User jaymz
 #PubkeyAcceptedKeyTypes +ssh-dss*
 #IdentityFile ~/.ssh/id_dsa
@@ -10,12 +11,61 @@ User git
 #PubkeyAcceptedKeyTypes +ssh-dss*
 IdentityFile ~/.ssh/id_dsa
 
-Host oneinten
-HostName oneintenband.com
+Host band
+HostName bittwiddlers.org
+Port 9022
 User band
-IdentityFile ~/.ssh/oneintenband_id_rsa
+IdentityFile ~/.ssh/band_id_rsa
 
-Host *
-#User VPC\jim.dunne
-ServerAliveInterval 60
-#IdentityFile ~/.ssh/vpc-jimdunne
+Host ultigit.ultimatesoftware.com
+HostName ultigit.ultimatesoftware.com
+User git
+IdentityFile ~/.ssh/id_rsa_us
+
+Host pi
+HostName 192.168.0.108
+User pi
+
+Host alttp.online
+#HostName 173.255.232.144
+Port 9022
+User jaymz
+IdentityFile ~/.ssh/id_rsa
+
+
+Host dockerbox
+#HostName 192.168.1.99
+#HostName 192.168.0.106
+User jamesd
+IdentityFile ~/.ssh/id_rsa
+# Act as SOCKS5 reverse proxy:
+RemoteForward 9050
+Compression no
+Ciphers aes128-ctr
+
+# OPPDS
+Host psr-kfk01
+HostName kafka-cluster-oppds-psr-kfk01.mia.ucloud.int
+User ubuntu
+IdentityFile ~/.ssh/oppds-psr-dev.pem
+
+Host psr-kfk02
+HostName kafka-cluster-oppds-psr-kfk02.mia.ucloud.int
+User ubuntu
+IdentityFile ~/.ssh/oppds-psr-dev.pem
+
+Host psr-kfk03
+HostName kafka-cluster-oppds-psr-kfk03.mia.ucloud.int
+User ubuntu
+IdentityFile ~/.ssh/oppds-psr-dev.pem
+
+Host psr-zk02
+HostName kafka-cluster-oppds-psr-zk02.mia.ucloud.int
+User ubuntu
+IdentityFile ~/.ssh/oppds-psr-dev.pem
+
+# PE / CMP
+Host cmp-docker-swarm
+HostName cmp-docker-swarm-master.mia.ucloud.int
+User ubuntu
+IdentityFile ~/.ssh/cmp-docker-swarm.pem

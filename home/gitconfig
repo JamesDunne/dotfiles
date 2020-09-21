@@ -1,8 +1,8 @@
 [user]
-    name = James Dunne
-    email = james.jdunne@gmail.com
+	name = Jim Dunne
+	email = Jim_Dunne@ultimatesoftware.com
 [core]
-	editor = nano
+	editor = micro
     autocrlf = false
     filemode = false
 [color]
@@ -21,6 +21,8 @@
 [diff "stat"]
     width = 124
 [branch]
-	autosetuprebase = always
+	autosetuprebase = never
 [push]
-	default = simple
+	default = current
+[rerere]
+	enabled = true
